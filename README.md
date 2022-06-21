@@ -1,3 +1,4 @@
+
 # ABSTRACT
 A significant variety of nature-inspired techniques are used in the field of Machine Learning
 (ML) to handle a wide range of problems. The term ”evolutionary computation” refers to a group
@@ -21,4 +22,4 @@ for predicting the model by hyper-parameter tuning using randomized search and n
 algorithm. Based on these three approaches we are going to conclude that which algorithm is best
 algorithm and which provides the best result for the model.
 # USER INTERFCAE
-
+![DIABETES](https://user-images.githubusercontent.com/92075957/174742074-1250b0ae-e6ce-4426-8e6c-1a5b1afb06a7.PNG)
