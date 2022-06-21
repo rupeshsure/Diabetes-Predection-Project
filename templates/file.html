@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)file:///D:/ML%20PROJECTS/user.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documen</title>
+</head>
+
+<body>
+    <form action="{{ url_for('predict')}}"  method="post">
+    <div class="container">
+        <h1>Log In</h1>
+        <div class="box">
+            <i class="fa fa-envelope"></i>
+            <input type="number" name="Prgenencies" id="Prgenencies" placeholder="Prgenencies">
+        </div>
+        <div class="box">
+            <i class="fa fa-key"></i>
+            <input type="number" name="Glucoose" id="Glucoose" placeholder="Glucoose">
+        </div>
+        <div class="box">
+            <i class="fa fa-ke"></i>
+            <input type="number" name="Blood_Pressure" id="Blood_Pressure" placeholder="Blood_PressureBlood_Pressure">
+        </div>
+        <div class="box">
+            <i class="fa fa-k"></i>
+            <input type="number" name="Skin_Thickness" id="Skin_Thickness" placeholder="Skin_Thickness">
+        </div>
+        <div class="box">
+            <i class="fa fa-y"></i>
+            <input type="number" name="Insulin" id="Insulin" placeholder="Insulin">
+        </div>
+        <div class="box">
+            <i class="fa fa-e"></i>
+            <input type="number" name="BMI" id="BMI" placeholder="BMI">
+        </div>
+        <div class="box">
+            <i class="fa fa-keyy"></i>
+            <input type="number" name="Diabetesconstant" id="Diabetesconstant" placeholder="Diabetesconstant">
+            
+        </div>
+        <div class="box">
+            <i class="fa fa-keeyy"></i>
+            <input type="number" name="Age" id="Age" placeholder="Age">
+            
+        </div>
+
+        <br><br><button id="sub" type="submit ">Calculate the diabetes</button>
+            <br>
+    
+</form>
+
+    <br><br><h3>{{ prediction_text }}</h3><h3>
+    </h3>
+</div>  
+
+
+    <style>
+        *{
+margin: 0;
+padding: 0;
+}
+body{
+    background: url(bg.jpg) no-repeat center center fixed;
+    background-size: cover; 
+}
+.container{ 
+    color: pink;
+    position: absolute;
+    top: 25%;
+    left: 40%; 
+}
+.container h1{
+    font-family: 'Heebo', sans-serif;
+    width: 50%;
+    display: inline-block;
+    font-size: 40px;
+    border-bottom: 5px solid purple;
+    margin-bottom: 15px;
+    padding: 13px 0;
+}
+.box{
+    width: 100%; 
+    margin: 22px 0px;
+    border-bottom: 2px solid purple;
+}
+.box input{  
+    background: none;
+    width: 75%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    outline:none;
+    color: white;
+}
+.btn{
+    color: white;
+    cursor: pointer;
+    outline: none; 
+    margin: 12px 0;
+    padding: 10px 21px;
+    border: 2px solid purple;
+    border-radius: 10px;
+    font-size: 18px;
+    background: none;
+    font-weight: bold;
+    
+}
+.box i{ 
+    width: 25px; 
+    text-align: center;
+}
+.btn:hover{
+    opacity: 0.5;
+    color: purple; 
+    background: white; 
+    
+}
+#sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+
+        #sub:hover {
+            background-color: darkcyan;
+        }
+
+
+
+    </style>
+    </body>
+    </html>
